@@ -12,31 +12,31 @@ public class progam {
     Scanner sc = new Scanner(System.in);
    
       product Product = new product();
-		System.out.println("Enter product data: ");
-		System.out.println("Name: ");
+		System.out.println("Dados do produto: ");
+		System.out.println("Nome: ");
 		Product.name = sc.nextLine();
-		System.out.print("Price: ");
+		System.out.print("Preço do produto: ");
 		Product.price = sc.nextDouble();
-		System.out.println("Quantity in stock: ");
+		System.out.println("Quantidade de produtos em estoque: ");
 		Product.quantity = sc.nextInt();
 			
-		System.out.println("Product data: "+  Product);
+		System.out.println("Dados do produto: "+  Product);
 		
 		System.out.println();
-		System.out.println("Enter the number of products to be added in stock:");
+		System.out.println("Insira a quantidade de produtos a serem adicionados ao estoque:");
 		int quantity = sc.nextInt();
 		Product.addProducts(quantity);
 		
 		System.out.println();
-		System.out.println("Upadate data: "+  Product);
+		System.out.println("Dados atualizados: "+  Product);
 		
 		System.out.println();
-		System.out.println("Enter the number of products to be removed from stock:");
+		System.out.println("Insira a quantidade de produtos a serem retirados do estoque:");
 		quantity = sc.nextInt();
 		Product.removeProdut(quantity);
 		
 		System.out.println();
-		System.out.println("Upadate data: "+ Product);
+		System.out.println("Dados atualizado: "+ Product);
 		
 		sc.close();
 		
